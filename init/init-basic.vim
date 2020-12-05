@@ -44,6 +44,8 @@ set ruler
 "解决使用鼠标中键时产生的多余字符
 set t_BE=
 
+"设置leadder按键
+let mapleader = "\<Space>"
 "----------------------------------------------------------------------
 " 搜索设置
 "----------------------------------------------------------------------
@@ -122,6 +124,8 @@ set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
 " 设置 tags：当前文件所在目录往上向根目录搜索直到碰到 .tags 文件
 " 或者 Vim 当前目录包含 .tags 文件
 set tags=./.tags;,.tags
+
+set autochdir
 
 " 如遇Unicode值大于255的文本，不必等到空格再折行
 set formatoptions+=m
