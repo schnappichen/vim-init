@@ -191,7 +191,7 @@ if index(g:bundle_group, 'tags') >= 0
 	Plug 'skywind3000/gutentags_plus'
 
 	" 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
-	let g:gutentags_project_root = ['.root']
+	let g:gutentags_project_root = ['.git']
 	let g:gutentags_ctags_tagfile = '.tags'
 
 	" 默认生成的数据文件集中到 ~/.cache/tags 避免污染项目目录，好清理
@@ -440,6 +440,10 @@ if index(g:bundle_group, 'leaderf') >= 0
 
 		" 全局 tags 模糊匹配
 		noremap <m-m> :LeaderfTag<cr>
+
+		let g:Lf_ShowDevIcons = 0
+		let g:Lf_ReverseOrder = 1
+		let g:Lf_GtagsAutoGenerate = 1
 
 		" 最大历史文件保存 2048 个
 		let g:Lf_MruMaxFiles = 2048
