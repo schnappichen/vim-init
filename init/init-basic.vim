@@ -125,6 +125,7 @@ set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
 " 或者 Vim 当前目录包含 .tags 文件
 set tags=./.tags;,.tags
 
+" 自动切换当前目录为当前文件所在的目录
 set autochdir
 
 " 如遇Unicode值大于255的文本，不必等到空格再折行
